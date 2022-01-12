@@ -1,0 +1,39 @@
+.btn {
+    @extend .font-size-12, .text-uppercase;
+    padding: rem(11px 20px);
+    min-height: rem(44px);
+    @include border-radius(0);
+    letter-spacing: rem(2px);
+    &-outline-white {
+        border-color: $white;
+        @extend .link-white;
+        &:hover {
+            background-color: $white;
+            // @extend .text-body;
+        }
+    }
+    &-outline-light {
+        border-color: black(.2);
+        @include links(black(.2), black(.2), black(.2), black(.2));
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: black(.2) !important;
+            border-color: black(.2) !important;
+            color: black !important;
+            outline: none;
+            box-shadow: 0 0 0;
+        }
+    }
+    &-outline-warning {
+        @extend .link-yellow;
+    }
+}
+
+a,
+button,
+.btn {
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,109 @@
+.t{
+    &-loader{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        opacity: 1;
+        // z-index:-6;
+        display: flex;
+        align-items: center;
+        z-index:-6;
+        &--background{
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $bush;
+            transform: scaleX(0);
+            transform-origin: right;
+            opacity: 1;
+        }
+
+        &--sidebar{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 45px;
+            background-color: $red;
+            transform-origin: top;
+            transform: scaleY(0);
+            z-index: 3;
+            @include media-breakpoint-up(md){
+                width: 75px;
+            }
+        }
+
+        &--inner{
+            height: calc(100vh - 140px);
+            display: flex;
+            align-items: center;
+            position: relative;
+            flex-direction: row;
+            // justify-content: center;
+            padding: 0 45px 0 20px;
+            opacity: 0;
+            @include media-breakpoint-up(lg){
+                padding: 0 75px 0 75px;
+            }
+            .row {
+                width: 100%;
+                
+            }
+        }
+
+        &--item{
+            font-size: rem(40px);
+            line-height: 1;
+            @extend %heading;
+            padding: 0 20px;
+            color: $primary;
+            display: flex;
+            @media(min-width:374px){
+                font-size: rem(40px);
+                line-height: 1;
+            }
+            @include media-breakpoint-up(sm){
+                font-size: rem(60px);
+                line-height: 1;
+            }
+            @include media-breakpoint-up(lg){
+                font-size: rem(75px);
+                line-height: 1;
+            }
+            @include media-breakpoint-up(xl){
+                font-size: rem(100px);
+                line-height: 1;
+            }
+            span.text-gray-500{
+                margin: 12px;
+                line-height: .4
+            }
+        }
+    }
+}
+
+.t-loader--item {
+    text-align: left;
+    display: block;
+    padding: 0 0 0 15px;
+    @include media-breakpoint-up(md) {
+        padding-right: 430px;
+    }
+    .t-loader__title {
+        font-size: 80px;
+        text-transform: uppercase;
+    }
+    span.text-gray-500 {
+        display: block;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.3) !important;
+        @extend .font-face-serif-secondary;
+        font-style: normal !important;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 10px;
+    }
+}

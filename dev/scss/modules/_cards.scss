@@ -1,0 +1,165 @@
+.card {
+    background-color: transparent;
+    border: none;
+
+    &-latest {
+
+        &--100vh {
+            height: 100vh;
+            justify-content: center;
+
+        }
+
+        &__img {
+            @extend .position-relative;
+            margin-bottom: rem(8px);
+            overflow: hidden;
+            background: $gray-500;
+            
+
+            img {
+                @extend .transition-slow;
+                opacity: 0;
+
+                &[data-loaded="true"] {
+                    animation-name: showLazyImg;
+                    animation-duration: 0.7s;
+                    // animation-fill-mode: both;
+                    opacity: 1;
+                }
+
+              
+            }
+            
+        }
+
+        &__title {
+            @extend .position-absolute,
+            .font-face-sans-serif,
+            .text-uppercase,
+            .display-3;
+            top: 50%;
+            right: rem(-109px);
+            // font-size: rem(40px);
+            // line-height: 0.8;
+            // letter-spacing: rem(5px);
+            transform-origin: center;
+            transform: translateY(-50%) rotate(-90deg);
+        }
+
+        .meta {
+            background-color: transparent;
+        }
+
+        &__link {
+            @extend .w-100,
+            .h-100,
+            .position-absolute,
+            .d-block;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        &:hover {
+            .card-latest__img {
+                img {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+    &-magazine {
+        @include media-breakpoint-down(md) {
+            max-width: rem(240px);
+            margin: 0 auto;
+        }
+
+        .meta {
+            background-color: transparent;
+            font-size: rem(14px);
+
+        }
+        &__img {
+            @extend .position-relative;
+            margin-bottom: rem(8px);
+            overflow: hidden;
+            background: $gray-500;
+            
+
+            img {
+                @extend .transition-slow;
+                opacity: 0;
+
+                &[data-loaded="true"] {
+                    animation-name: showLazyImg;
+                    animation-duration: 0.7s;
+                    // animation-fill-mode: both;
+                    opacity: 1;
+                }
+
+              
+            }
+            
+        }
+    }
+
+    &-result {
+        margin-bottom: rem(10px);
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: rem(20px);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: rem(20px);
+        }
+
+        .hr {
+            margin-top: rem(20px);
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(20px);
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: rem(20px);
+            }
+        }
+
+        .meta {
+            background-color: transparent;
+        }
+    }
+
+    &-main-post {
+        &__caption {
+            padding-top: 0;
+
+            @include media-breakpoint-up(md) {
+                padding-top: rem(70px);
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding-top: rem(140px);
+            }
+
+            .meta {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@keyframes showLazyImg {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

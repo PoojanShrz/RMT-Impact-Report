@@ -1,0 +1,90 @@
+.#{$global} {
+    &-footer {
+        background-color: $black;
+        @extend .text-white, .font-size-14;
+        padding: rem(60px 0);
+        @include media-breakpoint-up(lg) {
+            padding: rem(80px 0);
+        }
+        a {
+            @extend .link-white;
+            &:hover,
+            &:focus {
+                color: $warning !important;
+            }
+        }
+        .navbar-brand {
+            margin-bottom: 0;
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(34px);
+            }
+            img {
+                max-height: rem(48px);
+                @include media-breakpoint-up(lg) {
+                    max-height: rem(60px);
+                }
+            }
+        }
+        &__meta {
+            margin-bottom: rem(2px);
+            @include media-breakpoint-up(md) {
+                margin-bottom: rem(60px);
+            }
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+        }
+        &__info {
+            margin-bottom: rem(40spx);
+            @include media-breakpoint-up(md) {
+                margin-bottom: rem(48px);
+            }
+            @include media-breakpoint-up(lg) {
+                margin-bottom: rem(68px);
+            }
+        }
+        &__copyright {
+            .hr {
+                margin-bottom: rem(20px);
+            }
+        }
+        &__title {
+            margin-right: rem(24px);
+        }
+        &__list {
+            >li {
+                margin-left: rem(28px);
+                @extend .position-relative;
+                &::before {
+                    content: '';
+                    background-color: white(.1);
+                    @extend .position-absolute;
+                    width: rem(1px);
+                    height: rem(24px);
+                    top: 0;
+                    left: rem(-16px);
+                }
+                &:first-child {
+                    margin-left: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__explore {
+            @include media-breakpoint-down(md) {
+                margin-bottom: rem(24px);
+            }
+        }
+        .btn-outline-warning {
+            color: $white;
+            &:hover,
+            &:active,
+            &:visited,
+            &:focus {
+                color: $white;
+            }
+        }
+    }
+}

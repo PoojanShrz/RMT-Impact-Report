@@ -1,0 +1,26 @@
+.ih {
+    &-modal {
+        max-width: 1040px;
+        &--withborder {
+            border: none;
+            border-radius: 0;
+            border-top: 12px solid $yellow;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+            padding: 60px 40px;
+        }
+
+        &--section{
+            
+            border-top: 1px solid black(1);
+            
+        }
+    }
+}
+
+.modal-backdrop {
+    &.show{
+        opacity: 0.8;
+    }
+    background-color: #ffffff;
+
+}

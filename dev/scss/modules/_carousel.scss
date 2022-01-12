@@ -1,0 +1,51 @@
+.carousel {
+    &-hero {
+        .carousel {
+            &-item {
+                height: rem(443px);
+                @include media-breakpoint-up(md) {
+                    height: rem(366px);
+                }
+                @include media-breakpoint-up(lg) {
+                    height: rem(475px);
+                }
+                @include media-breakpoint-up(xl) {
+                    height: rem(652px);
+                }
+            }
+            &-img {
+                height: 100%;
+                @extend .bg-cover, .bg-no-repeat, .bg-position-center;
+                &:after {
+                    content: "";
+                    @extend .w-100, .h-100, .position-absolute;
+                    background-image: linear-gradient(
+                        to top,
+                        $black,
+                        rgba(0, 0, 0, 0)
+                    );
+                    opacity: 0.5;
+                }
+            }
+            &-caption {
+                width: rem(312px);
+                bottom: rem(40px);
+                padding: rem(0 10px);
+                left: 50%;
+                transform: translateX(-50%);
+                @include media-breakpoint-up(md) {
+                    width: rem(452px);
+                    bottom: rem(32px);
+                }
+                @include media-breakpoint-up(lg) {
+                    width: rem(760px);
+                    bottom: rem(80px);
+                }
+                .meta {
+                    color: $white;
+                    padding-top: rem(2px);
+                }
+            }
+        }
+    }
+}

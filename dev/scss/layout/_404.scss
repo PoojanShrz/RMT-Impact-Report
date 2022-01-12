@@ -1,0 +1,66 @@
+.#{$global} {
+    &-content {
+        &-author {
+            // height: 100vh;
+            background: $gray-500;
+            margin-top: -$header-height;
+            position: relative;
+            padding-top: $header-height;
+        }
+
+        &-404 {
+
+            .image-ratio{
+                &--100{
+                    position: absolute;
+                    padding-bottom: 42rem;
+                    height: 100%;
+
+                    img{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: .2;
+                    }
+                }
+            }
+
+            &--image {
+                position: absolute;
+                width: 100%;
+                // max-width: rem(420px);
+                left: 0;
+                top: 0;
+                // mix-blend-mode: multiply;
+                background-color: #fff;
+                // filter: grayscale(1);
+                // opacity: .25;
+                // margin-left: 100px;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            &--header{
+                padding: rem(76px 0);
+            }
+
+
+        }
+    }
+}
+
+.explore-404{
+    z-index: 0;
+    &:before{
+        background: $white;
+    }
+    color: var(--black) !important;
+    a{
+        color: var(--black) !important;
+    }
+
+}

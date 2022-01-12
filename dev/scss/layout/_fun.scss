@@ -1,0 +1,62 @@
+.t {
+    &-fun {
+        &--text{
+            // padding-left: 20px;
+            background: #fff;
+            @include media-breakpoint-up(md){
+                padding:30px !important;
+
+            }
+        }
+
+        &--title{
+            letter-spacing: normal;
+        }
+        &--font{
+            font-size: rem(20px);
+            font-family: $value;
+            line-height: 30px;
+            letter-spacing: rem(-.25px);
+            max-width: 440px;
+            font-weight: 400;
+            
+            // @include media-breakpoint-up(md){
+            // // padding-left: 140px;
+            // // padding-right: 54px;
+            // // }
+
+            mark{
+                background: transparent;
+                padding: 0;
+            }
+        }
+    }
+    &-funfact{
+        &--bg{
+            background-size: cover;
+            background-position: 50% 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+        &--title{
+            letter-spacing: normal;
+        }
+    }
+
+    &-fun01{
+        &--text{
+            margin-top: 50px;
+            background: rgba($color: #FFF, $alpha: .75);
+            padding: 12px;
+            padding: 30px;
+    // max-width: 618px;
+        }
+        &--title{
+            letter-spacing: normal;
+        }
+    }
+
+}

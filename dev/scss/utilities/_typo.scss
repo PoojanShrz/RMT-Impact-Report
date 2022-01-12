@@ -1,0 +1,336 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %heading;
+}
+
+h1,
+.h1 {
+    font-size: rem(100px);
+    line-height: 1;
+    letter-spacing: rem(-4px);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(80px);
+        
+        
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: rem(100px);
+        
+        
+    }
+
+    // @include media-breakpoint-up(lg) {
+    //     font-size: rem(100px);
+    //     letter-spacing: rem(-2.5px);
+    // }
+}
+
+h2,
+.h2 {
+    font-size: rem(30px);
+    line-height: 1.08;
+    // letter-spacing: rem(-0.5px);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(50px);
+        line-height: 1.1;
+        // letter-spacing: rem(-0.75px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(75px);
+        line-height: rem(90px);
+        // letter-spacing: rem(-1px);
+    }
+}
+
+h3,
+.h3 {
+    font-size: rem(30px);
+    line-height: 1.75;
+    letter-spacing: rem(-0.42px);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(40px);
+        line-height: 1.09;
+        letter-spacing: rem(-0.5px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(50px);
+        line-height: 65px;
+        letter-spacing: rem(-0.5px);
+    }
+}
+
+h4,
+.h4 {
+    font-size: rem(24px);
+    line-height: 1.4;
+    letter-spacing: rem(-0.25px);
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(35px);
+        line-height: 55px;
+        letter-spacing: rem(-0.5px);
+    }
+}
+
+h5,
+.h5 {
+    // font-size: rem(16px);
+    // line-height: 1.19;
+    // letter-spacing: rem(-0.25px);
+
+    font-size: rem(20px);
+    line-height: 35px;
+    @include media-breakpoint-up(lg) {
+    }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.blockquote {
+    @extend %display;
+}
+
+.display-1 {
+    font-size: rem(56px);
+    line-height: 0.8;
+    letter-spacing: rem(7px);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(88px);
+        letter-spacing: rem(11px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(120px);
+        letter-spacing: rem(15px);
+    }
+}
+
+.display-2 {
+    font-size: rem(48px);
+    line-height: 0.79;
+    letter-spacing: rem(6px);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(56px);
+        line-height: 0.88;
+        letter-spacing: rem(7px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(72px);
+        line-height: 0.81;
+        letter-spacing: rem(9px);
+    }
+}
+
+.display-3 {
+    font-size: rem(40px);
+    line-height: 0.8;
+    letter-spacing: rem(5px);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(28px);
+        line-height: 0.79;
+        letter-spacing: rem(3.5px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(40px);
+        line-height: 0.8;
+        letter-spacing: rem(5px);
+    }
+}
+
+.display-4 {
+    font-size: rem(28px);
+    line-height: 0.79;
+    letter-spacing: rem(3.5px);
+}
+
+.blockquote {
+    font-size: rem(48px);
+    line-height: 0.79;
+    letter-spacing: rem(0.25px);
+    @extend .position-relative;
+
+    &::before {
+        content: "“";
+        @extend .position-absolute;
+        top: 0;
+        left: rem(-40px);
+
+        @include media-breakpoint-up(lg) {
+            left: rem(-54px);
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(68px);
+        letter-spacing: normal;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(96px);
+        line-height: 0.8;
+        letter-spacing: rem(-0.5px);
+    }
+}
+
+strong{
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: rem(20px);
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: rem(40px);
+    }
+
+    // margin-bottom: rem(27px);
+    // @include last-child() {
+    //     margin-bottom: rem(0);
+    // }
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.p2 {
+        font-size: rem(12px);
+        line-height: 1.5;
+        letter-spacing: normal;
+
+        @include media-breakpoint-up(md) {
+            font-size: rem(14px);
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: rem(16px);
+        }
+    }
+}
+
+.p2 {
+    font-size: rem(12px);
+    line-height: 1.5;
+    letter-spacing: normal;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(14px);
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(16px);
+    }
+}
+.p1 {
+    font-size: rem(14px);
+    line-height: 1.5;
+    letter-spacing: normal;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(16px);
+        
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(18px);
+    }
+}
+
+.caption {
+    font-size: rem(12px);
+    // @extend .font-face-sans-serif-italic;
+    @extend .font-face-serif-italic,
+    .d-block;
+    line-height: 1;
+    letter-spacing: normal;
+    color: $gray-500;
+    text-transform: none;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(14px);
+    }
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+a {
+    @extend .transition-fast,
+    .link-primary;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    >li {
+        line-height: 1.5;
+        letter-spacing: normal;
+
+        &::marker {
+            color: red;
+        }
+    }
+}
+
+.title {
+    @extend %display;
+    color: $success;
+
+    &--main {
+        font-size: rem(40px);
+        line-height: 0.8;
+        letter-spacing: rem(5px);
+        margin-bottom: rem(16px);
+    }
+
+    &--sub {
+        font-size: rem(28px);
+        line-height: 0.79;
+        letter-spacing: rem(3.5px);
+        margin-bottom: rem(10px);
+    }
+}
+
+i {
+    font-weight: bold !important;
+    
+}
+
+.button {
+    font-size: rem(12px);
+        line-height: 1;
+        letter-spacing: rem(2px);
+    
+}
+
+.icon{
+    &-small{
+        font-size: .8rem;
+    }
+}
+
+.font-value{
+        font-size: rem(18px);
+        font-family: $value;
+        line-height: 24px;
+        letter-spacing:normal;
+        margin-bottom: rem(10px); 
+        text-transform: uppercase;
+}

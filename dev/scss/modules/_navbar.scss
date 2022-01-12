@@ -1,0 +1,25 @@
+.navbar {
+    &__others {
+        margin-left: rem(64px);
+        .search-icon {
+            margin-right: rem(38px);
+        }
+        .list-inline-item {
+            vertical-align: middle;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+        .search-icon {
+            @extend .link-navbar;
+        }
+    }
+    &-brand {
+        img {
+            max-height: rem(43.8px);
+        }
+    }
+    .nav-link {
+        cursor: pointer;
+    }
+}

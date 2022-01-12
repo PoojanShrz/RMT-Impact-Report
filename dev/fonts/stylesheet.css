@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Austin';
+    src: url('Austin-Light.eot');
+    src: url('Austin-Light.eot?#iefix') format('embedded-opentype'),
+        url('Austin-Light.woff2') format('woff2'),
+        url('Austin-Light.woff') format('woff'),
+        url('Austin-Light.ttf') format('truetype'),
+        url('Austin-Light.svg#Austin-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bureau Grot Wide';
+    src: url('BureauGrotWide-Light.eot');
+    src: url('BureauGrotWide-Light.eot?#iefix') format('embedded-opentype'),
+        url('BureauGrotWide-Light.woff2') format('woff2'),
+        url('BureauGrotWide-Light.woff') format('woff'),
+        url('BureauGrotWide-Light.ttf') format('truetype'),
+        url('BureauGrotWide-Light.svg#BureauGrotWide-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Value';
+    src: url('Value-Serif.eot');
+    src: url('Value-Serif.eot?#iefix') format('embedded-opentype'),
+        url('Value-Serif.woff2') format('woff2'),
+        url('Value-Serif.woff') format('woff'),
+        url('Value-Serif.ttf') format('truetype'),
+        url('Value-Serif.svg#Value-Serif') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

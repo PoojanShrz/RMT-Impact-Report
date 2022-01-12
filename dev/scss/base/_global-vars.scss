@@ -1,0 +1,46 @@
+$global: "theme";
+
+$header-height: 124px;
+
+$comment-bg: #ebebeb;
+
+$color-link: $green;
+$color-link-hover: darken($green, 50%);
+$color-link-visited: $green;
+$color-link-active: $green;
+
+$color-link-white: $white;
+$color-link-white-hover: $blue;
+$color-link-white-visited: $white;
+$color-link-white-active: $white;
+
+
+$color-link-primary: $primary;
+$color-link-primary-hover: $primary;
+$color-link-primary-visited: $primary;
+$color-link-primary-active: $primary;
+
+$color-link-black: $black;
+$color-link-black-hover: $success;
+$color-link-black-visited: $black;
+$color-link-black-active: $black;
+
+$color-link-light: lighten($black, 80%);
+$color-link-light-hover: $black;
+$color-link-light-visited: lighten($black, 80%);
+$color-link-light-active: lighten($black, 80%);
+
+$color-navbar: $primary;
+$color-navbar-hover: lighten($primary, 8%);
+$color-navbar-visited: $primary;
+$color-navbar-active: $primary;
+
+$color-warning: $yellow;
+$color-warning-hover: $white;
+$color-warning-visited: $yellow;
+$color-warning-active: $yellow;
+
+$color-white: $white;
+$color-white-hover: $white;
+$color-white-visited: $white;
+$color-white-active: $white;

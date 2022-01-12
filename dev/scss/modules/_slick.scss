@@ -1,0 +1,88 @@
+.slick {
+    &-carousel {
+        &-1 {
+            .slick {
+                &-track {
+                    .slick-slide {
+                        padding-left: rem(10px);
+                        padding-right: rem(10px);
+                        width: rem(244px);
+                        margin: 0;
+                        @extend .position-relative;
+                        &::before {
+                            content: "";
+                            background-color: $border-color;
+                            width: rem(1px);
+                            @extend .h-100, .position-absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        // &:first-child {
+                        //     &::before {
+                        //         display: none;
+                        //     }
+                        // }
+                    }
+                    .slick-active {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+                &-list {
+                    padding-left: rem(10px !important);
+                    padding-right: rem(10px !important);
+                }
+                &-track {
+                    margin-left: 0;
+                    margin-right: rem(-10px);
+                }
+            }
+        }
+        &-2 {
+            .slick-dots {
+                list-style-type: none;
+                @extend .m-0, .p-0, .d-flex, .justify-content-center;
+                >li {
+                    margin: rem(0 8px);
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid white(0.1);
+                        width: 32px;
+                        padding: 10px;
+                        text-indent: rem(-9999px);
+                    }
+                    &.slick-active {
+                        button {
+                            border-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        &-3 {
+            .slick-dots {
+                list-style-type: none;
+                @extend .m-0, .p-0, .d-flex, .justify-content-center;
+                >li {
+                    margin: rem(0 4px);
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid black(0.1);
+                        width: 32px;
+                        padding: 0;
+                        text-indent: rem(-9999px);
+                        height: 1px;
+                    }
+                    &.slick-active {
+                        button {
+                            border-color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

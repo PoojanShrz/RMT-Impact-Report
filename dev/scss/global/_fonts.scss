@@ -1,0 +1,207 @@
+// @font-face {
+//   font-family: 'Action Cond Medium Grade 2';
+//   src: url('#{$font-path}/actionCondMedium-Grade2.eot');
+//   src: url('#{$font-path}/actionCondMedium-Grade2.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/actionCondMedium-Grade2.woff2') format('woff2'),
+//       url('#{$font-path}/actionCondMedium-Grade2.woff') format('woff'),
+//       url('#{$font-path}/actionCondMedium-Grade2.ttf') format('truetype'),
+//       url('#{$font-path}/actionCondMedium-Grade2.svg#actionCondMedium-Grade2') format('svg');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF Extra';
+//   src: url('#{$font-path}/addingtonCF-ExtraBold.eot');
+//   src: url('#{$font-path}/addingtonCF-ExtraBold.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-ExtraBold.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-ExtraBold.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-ExtraBold.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-ExtraBold.svg#addingtonCF-ExtraBold') format('svg');
+//   font-weight: 800;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-ThinItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-ThinItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-ThinItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-ThinItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-ThinItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-ThinItalic.svg#addingtonCF-ThinItalic') format('svg');
+//   font-weight: 100;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF Demi';
+//   src: url('#{$font-path}/addingtonCF-DemiBold.eot');
+//   src: url('#{$font-path}/addingtonCF-DemiBold.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-DemiBold.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-DemiBold.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-DemiBold.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-DemiBold.svg#addingtonCF-DemiBold') format('svg');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF Demi';
+//   src: url('#{$font-path}/addingtonCF-DemiBoldItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-DemiBoldItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-DemiBoldItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-DemiBoldItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-DemiBoldItalic.svg#addingtonCF-DemiBoldItalic') format('svg');
+//   font-weight: 600;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-Medium.eot');
+//   src: url('#{$font-path}/addingtonCF-Medium.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-Medium.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-Medium.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-Medium.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-Medium.svg#addingtonCF-Medium') format('svg');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-Regular.eot');
+//   src: url('#{$font-path}/addingtonCF-Regular.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-Regular.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-Regular.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-Regular.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-Regular.svg#addingtonCF-Regular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-Light.eot');
+//   src: url('#{$font-path}/addingtonCF-Light.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-Light.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-Light.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-Light.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-Light.svg#addingtonCF-Light') format('svg');
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF Extra';
+//   src: url('#{$font-path}/addingtonCF-ExtraBoldItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-ExtraBoldItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-ExtraBoldItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-ExtraBoldItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-ExtraBoldItalic.svg#addingtonCF-ExtraBoldItalic') format('svg');
+//   font-weight: 800;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-BoldItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-BoldItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-BoldItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-BoldItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-BoldItalic.svg#addingtonCF-BoldItalic') format('svg');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-LightItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-LightItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-LightItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-LightItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-LightItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-LightItalic.svg#addingtonCF-LightItalic') format('svg');
+//   font-weight: 300;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-Bold.eot');
+//   src: url('#{$font-path}/addingtonCF-Bold.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-Bold.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-Bold.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-Bold.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-Bold.svg#addingtonCF-Bold') format('svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-MediumItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-MediumItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-MediumItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-MediumItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-MediumItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-MediumItalic.svg#addingtonCF-MediumItalic') format('svg');
+//   font-weight: 500;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-RegularItalic.eot');
+//   src: url('#{$font-path}/addingtonCF-RegularItalic.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-RegularItalic.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-RegularItalic.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-RegularItalic.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-RegularItalic.svg#addingtonCF-RegularItalic') format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+
+// @font-face {
+//   font-family: 'Addington CF';
+//   src: url('#{$font-path}/addingtonCF-Thin.eot');
+//   src: url('#{$font-path}/addingtonCF-Thin.eot?#iefix') format('embedded-opentype'),
+//       url('#{$font-path}/addingtonCF-Thin.woff2') format('woff2'),
+//       url('#{$font-path}/addingtonCF-Thin.woff') format('woff'),
+//       url('#{$font-path}/addingtonCF-Thin.ttf') format('truetype'),
+//       url('#{$font-path}/addingtonCF-Thin.svg#addingtonCF-Thin') format('svg');
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'Austin';
+  src:url('#{$font-path}/Austin-Light.woff2') format('woff2'),
+      url('#{$font-path}/Austin-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bureau Grot Wide';
+  src:url('#{$font-path}/BureauGrotWide-Light.woff2') format('woff2'),
+      url('#{$font-path}/BureauGrotWide-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Value';
+  
+  src:url('#{$font-path}/Value-Serif.woff2') format('woff2'),
+      url('#{$font-path}/Value-Serif.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+

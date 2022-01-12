@@ -1,0 +1,418 @@
+// Font Face Categories
+.font-face {
+    &-serif {
+        font-family: $font-family-serif;
+        font-weight: 300;
+    }
+    &-serif-italic {
+        font-family: $font-family-sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+    &-serif-secondary {
+        font-family: $font-family-serif-secondary;
+        font-weight: 500;
+    }
+    &-serif-secondary-italic {
+        font-family: $font-family-serif-secondary;
+        font-weight: 500;
+        font-style: italic;
+    }
+    &-sans-serif {
+        font-family: $font-family-sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    // &-sans-serif-bold {
+    //     font-family: $font-family-sans-serif;
+    //     font-weight: bold;
+    //     font-style: normal;
+    // }
+    &-sans-serif-italic {
+        font-family: $font-family-sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+}
+
+// Font Size
+.font-size {
+    &-10 {
+        font-size: rem(10px !important);
+    }
+    &-11 {
+        font-size: rem(11px !important);
+    }
+    &-12 {
+        font-size: rem(12px !important);
+    }
+    &-13 {
+        font-size: rem(13px !important);
+    }
+    &-14 {
+        font-size: rem(14px !important);
+    }
+    &-15 {
+        font-size: rem(15px !important);
+    }
+    &-16 {
+        font-size: rem(16px !important);
+    }
+    &-17 {
+        font-size: rem(17px !important);
+    }
+    &-18 {
+        font-size: rem(18px !important);
+    }
+    &-19 {
+        font-size: rem(19px !important);
+    }
+    &-20 {
+        font-size: rem(20px !important);
+    }
+    &-21 {
+        font-size: rem(21px !important);
+    }
+    &-22 {
+        font-size: rem(22px !important);
+    }
+    &-23 {
+        font-size: rem(23px !important);
+    }
+    &-24 {
+        font-size: rem(24px !important);
+    }
+    &-25 {
+        font-size: rem(25px !important);
+    }
+    &-26 {
+        font-size: rem(26px !important);
+    }
+    &-27 {
+        font-size: rem(27px !important);
+    }
+    &-28 {
+        font-size: rem(28px !important);
+    }
+    &-29 {
+        font-size: rem(29px !important);
+    }
+    &-30 {
+        font-size: rem(30px !important);
+    }
+    &-50 {
+        font-size: rem(50px !important);
+    }
+    &-75 {
+        font-size: rem(75px !important);
+    }
+}
+
+// Transitions
+.transition {
+    &-slow {
+        @include transition(all 0.5s ease);
+    }
+    &-fast {
+        @include transition(all 0.3s ease);
+    }
+}
+
+// Link Options
+.link {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: red;
+        width: 100%;
+        height: rem(2px);
+        position: absolute;
+        left: 0;
+        bottom: rem(1px);
+        @include opacity(0);
+        @extend .transition-fast;
+    }
+    &--underline {
+        &::after {
+            @include opacity(1);
+        }
+        &:hover {
+            &::after {
+                @include opacity(0);
+            }
+        }
+    }
+    &-green {
+        @include links(
+            $color-link,
+            $color-link-visited,
+            $color-link-hover,
+            $color-link-active
+        );
+    }
+    &-yellow {
+        @include links(
+            $color-warning,
+            $color-warning-visited,
+            $color-warning-hover,
+            $color-warning-active
+        );
+    }
+    &-black {
+        @include links(
+            $color-link-black,
+            $color-link-black-visited,
+            $color-link-black-hover,
+            $color-link-black-active
+        );
+    }
+    &-primary {
+        @include links(
+            $color-link-primary,
+            $color-link-primary-visited,
+            $color-link-primary-hover,
+            $color-link-primary-active
+        );
+    }
+    &-white {
+        @include links(
+            $color-link-white,
+            $color-link-white-visited,
+            $color-link-white-hover,
+            $color-link-white-active
+        );
+    }
+    &-light {
+        @include links(
+            $color-link-light,
+            $color-link-light-visited,
+            $color-link-light-hover,
+            $color-link-light-active
+        );
+    }
+    &-white {
+        @include links(
+            $color-white,
+            $color-white-visited,
+            $color-white-hover,
+            $color-white-active
+        );
+    }
+    &-navbar {
+        @include links(
+            $color-navbar,
+            $color-navbar-visited,
+            $color-navbar-hover,
+            $color-navbar-active
+        );
+    }
+    &-icon {
+        height: 22px;
+    }
+}
+
+// Truncating the paragraphs
+.truncate {
+    &--1-line {
+        @include ellipsis(20px, 1);
+    }
+
+    &--2-line {
+        @include ellipsis(50px, 2);
+    }
+
+    &--3-line {
+        @include ellipsis(70px, 3);
+    }
+}
+
+// BG Cover
+.bg {
+    &-cover {
+        background-size: cover;
+    }
+    &-position {
+        &-center {
+            background-position: center center;
+        }
+    }
+    &-no-repeat {
+        background-repeat: no-repeat;
+    }
+    &-black {
+        background-color: $black;
+    }
+    &-bush {
+        background-color: $bush !important;
+    }
+}
+
+// Text
+.text {
+    &-line-through {
+        text-decoration: line-through !important;
+    }
+    &-very-light-grey {
+        color: $gray-200;
+    }
+    &-grey {
+        color: $gray-500;
+    }
+    &-underline {
+        text-decoration: underline;
+    }
+    &-semi-punch {
+        color: $punch;
+    }
+}
+
+.full-screen {
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
+    @extend .bg-position-center;
+}
+
+.position {
+    &-l-0 {
+        left: 0;
+    }
+    &-r-0 {
+        right: 0;
+    }
+    &-b-0 {
+        bottom: 0;
+    }
+    &-t-0 {
+        top: 0;
+    }
+    &-lt-0 {
+        @extend .position-l-0, .position-t-0;
+    }
+}
+
+.opacity {
+    &-0 {
+        @include opacity(0);
+    }
+    &-1 {
+        @include opacity(1);
+    }
+    &-2 {
+        @include opacity(0.2);
+    }
+    &-3 {
+        @include opacity(0.3);
+    }
+    &-4 {
+        @include opacity(0.4);
+    }
+    &-5 {
+        @include opacity(0.5);
+    }
+    &-6 {
+        @include opacity(0.6);
+    }
+    &-7 {
+        @include opacity(0.7);
+    }
+    &-8 {
+        @include opacity(0.8);
+    }
+    &-9 {
+        @include opacity(0.9);
+    }
+}
+
+// Label
+.label {
+    line-height: 1;
+    letter-spacing: -0.1px;
+    font-size: rem(12px);
+    @include media-breakpoint-up(lg) {
+        font-size: rem(12px);
+    }
+    &-2 {
+        // @extend .font-face-sans-serif-bold;
+    }
+}
+
+.container{
+    padding-left: 54px;
+    padding-right: 54px;
+    @include media-breakpoint-up(lg){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.lh{
+    &-1{
+        line-height: 1.2;
+    }
+}
+
+.ls{
+    &-n{
+        letter-spacing: normal !important;
+    }
+}
+
+// .col-gutter {
+//     @include media-breakpoint-down(lg) {
+//         margin-right: -28px;
+//         margin-left: -28px;
+//     }
+//     @include media-breakpoint-down(md) {
+//         margin-right: -10px;
+//         margin-left: -10px;
+//     }
+//     > .col,
+//     > [class*="col-"] {
+//         @include media-breakpoint-down(lg) {
+//             padding-right: 28px;
+//             padding-left: 28px;
+//         }
+//     }
+//     > .col,
+//     > [class*="col-"] {
+//         @include media-breakpoint-down(md) {
+//             padding-right: 10px;
+//             padding-left: 10px;
+//         }
+//     }
+// }
+
+// .container {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     @include media-breakpoint-up(md) {
+//         padding-left: 40px;
+//         padding-right: 40px;
+//     }
+//     @include media-breakpoint-up(lg) {
+//         padding-left: 56px;
+//         padding-right: 56px;
+//     }
+//     .row {
+//         @extend .col-gutter;
+//     }
+// }
+
+
+.list {
+    &-number {
+        padding: 0 0 0 20px;
+        >li {
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.line-height {
+    &--1 {
+        line-height: 1;
+    }
+    &--1-5 {
+        line-height: 1.5;
+    }
+}

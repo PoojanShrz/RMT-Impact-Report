@@ -1,0 +1,14 @@
+// Icons Pseudo
+// eg: @include icons-pseudo; [within the pseudo class]
+/* 
+  &:before {
+    content: '\e900';
+    @include icons-pseudo;
+  }
+*/
+$icons: 'icons';
+
+@mixin icons-pseudo {
+  position: absolute;
+  font-family: $icons;
+}

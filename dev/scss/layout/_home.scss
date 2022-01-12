@@ -1,0 +1,48 @@
+.t {
+    &-home {
+        &--text {
+            margin-bottom: 54px;
+            &::first-letter {
+                font-size: rem(120px);
+                font-family: $austin;
+                color: var(--punch);
+                float: left;
+                line-height: .7;
+                // margin-bottom: 20px;
+                margin-right: 20px;
+                margin-top: 8px;
+                padding-left: 10px;
+                text-transform: uppercase;
+
+
+            }
+        }
+
+        &--blockquote {
+            padding-left: 45px;
+            font-size: rem(20px);
+            line-height: 30px;
+            font-family: $value;
+            letter-spacing: rem(-.25px);
+            position: relative;
+            
+
+
+            &:before{
+                content: '';
+                width: 4px;
+                height: 100%;
+                position: absolute;
+                background: var(--punch);
+                left: 0;
+
+            }
+
+        }
+    }
+}
+.slide-identity-toughtbubble {
+    a{
+        color: $punch;
+    }
+}

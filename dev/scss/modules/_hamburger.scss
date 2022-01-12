@@ -1,0 +1,125 @@
+.hamburger {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.is-active {
+        &:hover {
+            opacity: 0.7;
+        }
+
+        .hamburger-inner {
+            background-color: $black;
+           
+
+            &::before,
+            &::after {
+                background-color: $black;
+                
+            }
+        }
+    }
+}
+
+.hamburger-box {
+    width: rem(28px);
+    height: rem(15px);
+    @extend .position-relative, .d-inline-block;
+}
+
+.hamburger-inner {
+    width: rem(28px);
+    height: rem(1px);
+    background-color: $black;
+    @extend .position-absolute, .d-block;
+    top: 50%;
+    transform: translateY(-50%);
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    @include border-radius(0);
+    .theme-main-transparent &{
+        background-color: $white;
+    }
+
+    &::before,
+    &::after {
+        height: rem(1px);
+        background-color: $black;
+        @extend .position-absolute;
+        right: 0;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+        @include border-radius(0);
+        .theme-main-transparent &{
+            background-color: $white;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+    }
+
+    &::before {
+        width: rem(28px);
+        top: rem(-7.5px);
+    }
+
+    &::after {
+        width: rem(28px);
+        bottom: rem(-8px);
+    }
+}
+
+.hamburger--spin {
+    .hamburger-inner {
+        transition-duration: 0.22s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+        &::before {
+            transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+        }
+
+        &::after {
+            transition: bottom 0.1s 0.25s ease-in,
+                transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+    }
+
+    &.is-active .hamburger-inner {
+        transform: rotate(225deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &::before {
+            width: rem(28px);
+            top: 0;
+            opacity: 0;
+            transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+        }
+
+        &::after {
+            width: rem(28px);
+            bottom: 0;
+            transform: rotate(-90deg);
+            transition: bottom 0.1s ease-out,
+                transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+    }
+}

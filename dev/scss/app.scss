@@ -1,0 +1,62 @@
+@import 'global/path',
+        'global/fonts',
+        'base/functions';
+
+@import //'vendors/animate/animate',
+        'vendors/bootstrap/bootstrap',
+        'vendors/icons/icons';
+
+@import 'base/global-vars';
+
+@import 'mixins/mixins';
+
+@import 'utilities/placeholders',
+        'utilities/typo',
+        'utilities/helper',
+        'utilities/config';
+
+@import //'modules/accordion',
+        // 'modules/alert',
+        // 'modules/blockquote',
+        // 'modules/breadcrumbs',
+        // 'modules/aos',
+        // 'modules/buttons',
+        // 'modules/cards',
+        // 'modules/carousel',
+        // 'modules/dropdowns',
+        // 'modules/forms',
+        // 'modules/hamburger',
+        // 'modules/hr',
+        // 'modules/label',
+        // 'modules/list',
+        // 'modules/loader',
+        // 'modules/media',
+        // 'modules/modal',
+        // 'modules/nano',
+        // 'modules/navbar',
+        // 'modules/or',
+        // 'modules/tab',
+        // 'modules/pagination',
+        // 'modules/panel',
+        // 'modules/popup',
+        // 'modules/pushy',
+        // 'modules/slick',
+        // 'modules/social',
+        // 'modules/table',
+        // 'modules/tabpanel',
+        'modules/section',
+        'modules/title';
+
+@import 'layout/fullpage',
+        'layout/loader',
+         'layout/header',
+        'layout/global-nav',
+        'layout/main',
+        'layout/community',
+        'layout/home',       
+        'layout/summary',
+        'layout/drink',
+        'layout/fun',
+        'layout/action',
+        'layout/footer';
+
